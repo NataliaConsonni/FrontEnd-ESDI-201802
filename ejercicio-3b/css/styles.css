@@ -13,7 +13,8 @@ html, body {
 Puedes probar de usar PX o EM para asignar los tamaños a la letra.
 Además, la imagen tiene un color en el fondom también puedes agregarlo en el body */
 body {
-
+	font-family: monospace;
+	background-color: #d9d9d9;
 }
 
 /* Estan las clases que posicionan los elementos pero faltan por crear todas las clases
@@ -23,10 +24,12 @@ body {
 #container {
 	width: 960px;
 	margin: 10px auto;
-	padding: 20px;
+	padding: 20px 20px 40px;
 	position: relative;
   	height: auto;
     overflow: auto;
+    border: 5px double #000;
+    background: #fff;
 }
 
 #header, #content {
@@ -42,6 +45,13 @@ body {
     width: 300px;
     margin: 10px;
     float: left;
+    text-align: center;
+}
+.column .center{
+	padding: 0 20px;
+}
+.column ul{
+	text-align: left;
 }
 
 ul#navigation {
@@ -49,9 +59,51 @@ ul#navigation {
 	padding: 15px;
 	margin: 0px auto;
 	text-align: center;
+	border-top: 2px solid #000;
+	border-bottom: 1px solid #000;
+	margin-bottom: 40px;
 }
 
 #navigation li{
 	display: inline;
 	margin: 0px 3px;
+}
+
+#navigation li a{
+	display: inline-block;
+	padding: 0 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	font-size: 15px;
+}
+#navigation li a.on{
+	color: red !important;
+}
+
+
+/*
+	Utilities Styles
+*/
+.bold{
+	font-weight: bold;
+}
+.red{
+	color: red;
+}
+
+/*
+	Font Styles
+*/
+h1{
+	text-align: center;
+}
+
+
+/*
+	make all images resposnive
+*/
+img{
+	max-width: 100%;
+	height: auto;
 }
