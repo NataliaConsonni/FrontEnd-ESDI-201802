@@ -29,11 +29,19 @@ div {
 
 #navigation-links {
     background: black;
+    overflow: hidden;
+    padding: 5px 10px;
 }
 
 #navigation-links ul {
     margin: 0;
     padding: 10px;
+    display: inline-block;
+    float: left;
+}
+
+#navigation-links li{
+    display: inline-block;
 }
 
 
@@ -85,14 +93,28 @@ div {
 
 #navigation-links a {
     text-decoration: none;
-    color: white;
+    color: #6b6b6b;
     padding: 5px;
 }
 
 #navigation-links a.active {
     background: #6b6b6b;
     border-radius: 5px;
+    color: #ffffff;
 }
+
+/*
+    Search Form
+*/
+.search-form{
+    display: inline-block;
+    float: right;
+    height: 100%;
+}
+.search-form input{
+    height: 40px;
+}
+
 
 /*
     Definimos la cuadricula de ads utilizando flexbox.
