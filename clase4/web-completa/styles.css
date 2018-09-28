@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 div {
@@ -49,26 +50,67 @@ div {
     Creamos 2 columnas para el contenido principal
     y la barra lateral.
 */
+#content{
+    overflow: auto;
+}
 #main-content, #sidebar {
     vertical-align: top;
 }
 #main-content {
-
+    width: calc(70% - 30px);
+    float: left;
+    padding: 15px;
 }
 
 #sidebar {
-
+    width: 30%;
+    float: left;
 }
 
 /*
     Damos estilos al contenido principal
 */
+
 #main-article {
-    padding: 5px;
-    background: #e6e6e6;
+    padding: 10px;
+    background: #f7f7f7;
     margin: 5px;
     border-radius: 10px;
     border: 1px solid #ccc;
+}
+#main-article h2{
+    margin: 0;
+}
+
+.read-more{
+    line-height: 36px;
+    padding: 0 12px 0 0;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    height: auto;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+0,e2e2e2+100 */
+background: #f7f7f7; /* Old browsers */
+background: -moz-linear-gradient(top, #f7f7f7 0%, #e2e2e2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f7f7f7 0%,#e2e2e2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#e2e2e2',GradientType=0 ); /* IE6-9 */
+}
+.read-more i{
+    display: inline-block;
+    margin-right: 8px;
+    border-right: 1px solid #d9d9d9;
+    padding: 0 12px;
+    line-height: 36px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+0,c6c6c6+100 */
+background: #ededed; /* Old browsers */
+background: -moz-linear-gradient(top, #ededed 0%, #c6c6c6 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ededed 0%,#c6c6c6 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ededed 0%,#c6c6c6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#c6c6c6',GradientType=0 ); /* IE6-9 */
+}
+.read-more:hover{
+    cursor: pointer;
 }
 
 /*
@@ -76,12 +118,13 @@ div {
     usando flexible boxes.
 */
 #articles {
-
+    overflow: auto;
 }
 
 .post {
     padding: 5px;
     width: calc(50% - 10px);
+    float: left;
 }
 
 /*
@@ -110,25 +153,37 @@ div {
     display: inline-block;
     float: right;
     height: 100%;
+    padding: 6px 0;
+    overflow: hidden;
 }
 .search-form input{
-    height: 40px;
+    height: 29px;
+    padding: 0 8px;
+    float: left;
+    border: 0px none;
 }
-
+.search-form button{
+    line-height: 26px;
+    border: 0px none;
+    background: #6b6b6b;
+    color: #ffffff;
+    float: left;
+}
 
 /*
     Definimos la cuadricula de ads utilizando flexbox.
 */
 #ads-container {
-
+    overflow: auto;
 }
 
 .ad-item {
     border: 1px solid #ccc;
     background: #e6e6e6;
     margin: 10px;
-    width: 128px;
+    width: calc(50% - 23px);
     height: 128px;
+    float: left;
 }
 
 #footer {
