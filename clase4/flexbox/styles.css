@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+}
+
+.container div {
+    height: 300px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#column1 {
+    background: blue;
+}
+#column2 {
+    background: red;
+}
+#column3 {
+    background: grey;
+}
+#column1,
+#column2,
+#column3{
+    width: 33%;
+}
