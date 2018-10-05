@@ -1,0 +1,105 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+    Vamos a dar un tamaño fijo de 960px a la página para que
+    sea más senzillo calcular tamaños.
+*/
+#page-wrapper {
+    border: 1px solid grey;
+}
+#header {
+    color: white;
+    background: #6b6b6b;
+    padding: 15px 0 0 0;
+}
+
+#header h1 {
+    margin-top: 0;
+    margin-left: 15px;
+}
+
+#navigation-links {
+    background: black;
+}
+
+#navigation-links ul {
+    margin: 0;
+    padding: 10px;
+}
+
+
+/*
+    Creamos 2 columnas para el contenido principal
+    y la barra lateral.
+*/
+#main-content, #sidebar {
+    vertical-align: top;
+}
+#main-content {
+
+}
+
+#sidebar {
+
+}
+
+/*
+    Damos estilos al contenido principal
+*/
+#main-article {
+    padding: 5px;
+    background: #e6e6e6;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/*
+    Definimos la cuadrícula de artículos
+    usando flexible boxes.
+*/
+#articles {
+
+}
+
+/*
+    Hay que recolocar la lista en horizontal. 
+*/
+#navigation-links li {
+
+}
+
+#navigation-links a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+
+#navigation-links a.active {
+    background: #6b6b6b;
+    border-radius: 5px;
+}
+
+/*
+    Definimos la cuadricula de ads utilizando flexbox.
+*/
+#ads-container {
+
+}
+
+.ad-item {
+    border: 1px solid #ccc;
+    background: #e6e6e6;
+    margin-bottom: 10px;
+    width: 128px;
+    height: 128px;
+    box-sizing: border-box;
+}
+
+#footer {
+    background: #ccc;
+    padding: 15px;
+}
