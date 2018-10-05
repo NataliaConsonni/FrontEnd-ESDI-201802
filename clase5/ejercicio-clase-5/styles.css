@@ -8,7 +8,7 @@ html, body {
     sea más senzillo calcular tamaños.
 */
 #page-wrapper {
-    border: 1px solid grey;
+    padding-top: 20px;
 }
 #header {
     color: white;
@@ -21,15 +21,24 @@ html, body {
     margin-left: 15px;
 }
 
-#navigation-links {
+.navbar-dark {
     background: black;
+    margin-bottom: 0;
+    border-radius: 0;
 }
 
-#navigation-links ul {
+.navbar-dark ul {
     margin: 0;
-    padding: 10px;
+    padding: 0;
 }
-
+.navbar-nav li a{
+    display: inline-block;
+    color: #6b6b6b;
+}
+.navbar-nav li.active a{
+    background-color: #6b6b6b;
+    color: #ffffff;
+}
 
 /*
     Creamos 2 columnas para el contenido principal
@@ -55,6 +64,37 @@ html, body {
     margin: 5px;
     border-radius: 10px;
     border: 1px solid #ccc;
+}
+
+.read-more{
+    line-height: 36px;
+    padding: 0 12px 0 0;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+    height: auto;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+0,e2e2e2+100 */
+background: #f7f7f7; /* Old browsers */
+background: -moz-linear-gradient(top, #f7f7f7 0%, #e2e2e2 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f7f7f7 0%,#e2e2e2 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f7f7f7 0%,#e2e2e2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#e2e2e2',GradientType=0 ); /* IE6-9 */
+}
+.read-more i{
+    display: inline-block;
+    margin-right: 8px;
+    border-right: 1px solid #d9d9d9;
+    padding: 0 12px;
+    line-height: 36px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+0,c6c6c6+100 */
+background: #ededed; /* Old browsers */
+background: -moz-linear-gradient(top, #ededed 0%, #c6c6c6 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ededed 0%,#c6c6c6 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ededed 0%,#c6c6c6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#c6c6c6',GradientType=0 ); /* IE6-9 */
+}
+.read-more:hover{
+    cursor: pointer;
 }
 
 /*
@@ -94,9 +134,32 @@ html, body {
     border: 1px solid #ccc;
     background: #e6e6e6;
     margin-bottom: 10px;
-    width: 128px;
     height: 128px;
     box-sizing: border-box;
+}
+
+/*
+    Search Form
+*/
+
+.search-form input{
+    height: 29px;
+    padding: 0 8px;
+    border: 0px none;
+    border-radius: 0;
+}
+.search-form button{
+    line-height: 29px;
+    border: 0px none;
+    background: #6b6b6b;
+    color: #ffffff;
+    padding: 0 15px;
+    border-radius: 0;
+    text-shadow: none;
+}
+
+#right-widget ul{
+    padding-left: 15px;
 }
 
 #footer {
