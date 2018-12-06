@@ -1,0 +1,64 @@
+body {
+    background: url('background.jpg');
+    background-color: #875e35;
+    background-size: cover;
+}
+
+.hidden {
+    display: none;
+}
+
+.bg-gray{
+    background-color: #d9d9d9;
+}
+
+.box {
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.avatar-box p{
+    margin: 0;
+    line-height: 56px;
+    width: cal(100% - 56px);
+}
+
+.user-avatar {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*padding-bottom: 100%;*/
+    border-radius: 100%;
+    box-shadow: 0 0 5px #e6e6e6;
+    width: 56px;
+    height: 56px;
+    float: left;
+    margin-right: 16px;
+    border: 1px solid #d9d9d9;
+    overflow: hidden;
+    text-transform: center;
+}
+
+.user-avatar.batman {
+    background-image: url('batman.jpg');
+}
+
+.user-avatar.greenman {
+    background-image: url('greenman.jpg');
+}
+
+.user-avatar.redman {
+    background-image: url('redman.jpg');
+}
+
+.user-avatar.superman {
+    background-image: url('superman.jpg');
+}
+.tweet-box{
+    overflow: hidden;
+    margin-top: 16px;
+}

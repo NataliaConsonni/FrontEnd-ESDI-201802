@@ -1,0 +1,14 @@
+.bg-gray{
+	background-color: #d9d9d9;
+	padding: 16px;
+}
+
+.form-wrapper{
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	margin: 30px auto;
+}
+
+.login-form{
+	padding: 16px;
+	background: #fff;
+}
